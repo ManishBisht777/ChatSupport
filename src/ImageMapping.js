@@ -17,9 +17,13 @@ import feature1 from "./assets/featured1.svg";
 import feature2 from "./assets/featured2.svg";
 import feature3 from "./assets/featured3.svg";
 
+import productImage from "./assets/product.svg";
+import curr from "./assets/curr.svg";
+import sliderImg from "./assets/slider.svg";
 
 const images = {
  search,cart,bell,logo,ham,close,arrow,creator,landingImage,mail,location,feature1,feature2,feature3
+ , productImage,curr,sliderImg
 };
 
 function getImageByKey(key) {

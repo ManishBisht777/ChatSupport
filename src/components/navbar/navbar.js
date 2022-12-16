@@ -43,27 +43,12 @@ const Navbar = () => {
         <li>
           <NavLink
             className={({ isActive }) => (isActive ? "active--link" : "")}
-            to="/marketplace"
+            to="/livesupport"
           >
-            marketplace
+            live support
           </NavLink>
         </li>
-        <li>
-          <NavLink
-            className={({ isActive }) => (isActive ? "active--link" : "")}
-            to="/auction"
-          >
-            auctiion
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            className={({ isActive }) => (isActive ? "active--link" : "")}
-            to="/drop"
-          >
-            drop
-          </NavLink>
-        </li>
+        
       </ul>
       <ul className="container gap--md navbar__NavLinks ">
         <li>

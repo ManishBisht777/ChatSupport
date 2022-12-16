@@ -220,6 +220,9 @@
 
   .featured-product {
     flex-direction: column;
+    &:nth-child(3) {
+      flex-direction: column;
+    }
   }
   .product__heading {
     font-size: $font-md;

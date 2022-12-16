@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import peopleGrp from "../../assets/pplgrp.png";
 import getImageByKey from "../../ImageMapping";
 
 const FeaturedProduct = ({image}) => {
   return (
-    <div className="featured-product container gap--lg container--center-row ">
+    <Link to="/product" className="featured-product container gap--lg container--center-row ">
       <img src={image} alt="featured product" />
       <div className="container container--col gap--lg featured__product-info">
         <h3 className="product__heading">The Boolean Egyptian</h3>
@@ -21,7 +22,7 @@ const FeaturedProduct = ({image}) => {
           </button>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
