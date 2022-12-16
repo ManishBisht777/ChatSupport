@@ -1,13 +1,17 @@
+import { Route, Routes } from "react-router-dom";
+import Footer from "./components/footer/footer";
+import Navbar from "./components/navbar/navbar";
+import Home from "./pages/home/home";
+import "./styles/main.css"
+
 function App() {
   return (
     <div className="App">
-      hehelolo
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, ab
-        suscipit. Nesciunt commodi asperiores deserunt porro vero. Numquam
-        provident corporis perspiciatis sunt, explicabo libero dignissimos,
-        totam quaerat obcaecati, dolorem consequuntur.
-      </p>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      <Footer/>
     </div>
   );
 }

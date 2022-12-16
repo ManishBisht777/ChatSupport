@@ -1,0 +1,23 @@
+@use "../../styles/assets" as *;
+
+.footer {
+  padding: 3rem;
+  color: $light-black;
+}
+
+.footer__icon {
+  width: 1.5rem;
+}
+.footer__links {
+  margin: 0 3rem;
+}
+
+.copyright {
+  padding-top: 4rem;
+}
+
+@media screen and (max-width: 700px) {
+  .footer__main {
+    flex-direction: column;
+  }
+}
