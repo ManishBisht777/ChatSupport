@@ -3,7 +3,7 @@ import Carousel from "../../components/carousel/carousel";
 import FeaturedProduct from "../../components/featuredProduct/featuredProduct";
 import getImageByKey from "../../ImageMapping";
 import { motion } from "framer-motion";
-import { container } from "../../animation/animation";
+import { container, fromright, item } from "../../animation/animation";
 const Home = () => {
   return (
     <motion.main
@@ -95,14 +95,28 @@ const Home = () => {
       </section>
 
       <section className="explore container container--col round">
-        <a href="/" className="container container--between secondary-links ">
+        <motion.a
+          initial={{ opacity: 0, x: "10%" }}
+          whileInView={{ opacity: 1, x: "0%" }}
+          viewport={{ amount: 0.3 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+          href="/"
+          className="container container--between secondary-links "
+        >
           Explore marketplace
           <img className="" src={getImageByKey("arrow")} alt="" />
-        </a>
-        <a href="/" className="container container--between secondary-links ">
+        </motion.a>
+        <motion.a
+          initial={{ opacity: 0, x: "-10%" }}
+          whileInView={{ opacity: 1, x: "0%" }}
+          viewport={{ amount: 0.3 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+          href="/"
+          className="container container--between secondary-links "
+        >
           See auctions
           <img src={getImageByKey("arrow")} alt="" />
-        </a>
+        </motion.a>
       </section>
 
       <section className="creator">
@@ -110,12 +124,38 @@ const Home = () => {
 
         <div className="container container--between">
           <h4 className="creator__heading">TOP CREATORS OF THE WEEK</h4>
-          <ul className="creator__list container container--col gap--md">
-            <li>Editorials</li>
-            <li>Fashion</li>
-            <li>Lifestyle</li>
-            <li>Blueprint</li>
-          </ul>
+          <motion.ul
+            variants={fromright}
+            initial="hidden"
+            whileInView={"show"}
+            transition={{ ease: "easeInOut" }}
+            className="creator__list container container--col gap--md"
+          >
+            <motion.li
+              variants={item}
+              transition={{ duration: 1, ease: "easeInOut" }}
+            >
+              Editorials
+            </motion.li>
+            <motion.li
+              variants={item}
+              transition={{ duration: 1, ease: "easeInOut" }}
+            >
+              Fashion
+            </motion.li>
+            <motion.li
+              variants={item}
+              transition={{ duration: 1, ease: "easeInOut" }}
+            >
+              Lifestyle
+            </motion.li>
+            <motion.li
+              variants={item}
+              transition={{ duration: 1, ease: "easeInOut" }}
+            >
+              Blueprint
+            </motion.li>
+          </motion.ul>
         </div>
         <p className="creator__quotes">
           “Everything always looked better in black and white. Everything always
@@ -124,21 +164,6 @@ const Home = () => {
           people at a gig, more people at a football match, than with colour
           photography. Everything looks more exciting.”– Jack Lowden
         </p>
-      </section>
-
-      <section className="newsletter container container--center gap--lg">
-        <h4 className="newsletter__heading">NewsLetter</h4>
-        <p className="newsletter__para">
-          Subscribe to get daily updates on new drops & exciting deals{" "}
-        </p>
-        <form action="" className="container gap--lg newsletter__form">
-          <input
-            placeholder="Enter Email"
-            className="input--light"
-            type="email"
-          />
-          <button className="button--dark">Subscribe</button>
-        </form>
       </section>
     </motion.main>
   );

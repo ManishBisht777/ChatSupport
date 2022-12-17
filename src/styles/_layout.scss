@@ -72,6 +72,15 @@
   padding: 0.5rem 2rem;
   background: $black;
   color: $white;
+  transition: 0.3s ease-in-out;
+}
+
+.button--dark:hover,
+.button--dark[click] {
+  background: $white;
+  color: $light-black;
+  border: 1px solid $light-black;
+  transition: 0.3s ease-in-out;
 }
 
 .active--link {

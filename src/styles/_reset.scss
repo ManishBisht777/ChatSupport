@@ -42,8 +42,9 @@ button {
 
 body {
   font-family: $font-satoshi;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-display: swap;
+  overflow-x: hidden;
 }
 
 label[for="search"] {

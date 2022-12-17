@@ -9,7 +9,7 @@ import {
   Thread,
   Window,
 } from "stream-chat-react";
-
+import { motion } from "framer-motion";
 import "stream-chat-react/dist/css/v2/index.css";
 
 const Support = () => {
@@ -48,7 +48,12 @@ const Support = () => {
   }, [startChat]);
 
   return (
-    <section className="support container container--col gap--lg">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.5, type: "spring" }}
+      className="support container container--col gap--lg"
+    >
       <h2>Ask Your Queries</h2>
       <p>We provide live chat support to help you out whenever you are stuck</p>
 
@@ -77,7 +82,7 @@ const Support = () => {
           )}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
