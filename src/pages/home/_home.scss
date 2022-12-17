@@ -233,13 +233,14 @@
   }
 
   .people-grp {
-    max-width: 7rem;
-  }
-  .more-info {
     display: none;
   }
   .featured__product-info {
     gap: 1rem;
+  }
+
+  .events {
+    margin-top: 2rem;
   }
   .events__slide {
     flex-direction: column;

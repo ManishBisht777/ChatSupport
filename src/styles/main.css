@@ -484,13 +484,13 @@ label[for=search] {
     font-size: 1rem;
   }
   .people-grp {
-    max-width: 7rem;
-  }
-  .more-info {
     display: none;
   }
   .featured__product-info {
     gap: 1rem;
+  }
+  .events {
+    margin-top: 2rem;
   }
   .events__slide {
     flex-direction: column;
@@ -723,5 +723,8 @@ label[for=search] {
 @media screen and (max-width: 700px) {
   .footer__main {
     flex-direction: column;
+  }
+  .footer__links {
+    align-items: center;
   }
 }/*# sourceMappingURL=main.css.map */
