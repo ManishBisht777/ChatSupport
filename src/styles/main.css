@@ -197,6 +197,12 @@ label[for=search] {
   width: 1.2rem;
 }
 
+.navbar__NavLinks li:hover {
+  color: #292929;
+  text-decoration: underline;
+  transition: 0.3s ease-in-out;
+}
+
 .nav__close {
   display: none;
 }
@@ -572,6 +578,7 @@ label[for=search] {
   max-width: 20rem;
   border: 1px solid #333333;
   padding: 2rem;
+  height: 100%;
 }
 
 .product__info {
@@ -655,6 +662,7 @@ label[for=search] {
   .product__image {
     flex-grow: 1;
     max-width: 100%;
+    padding: 1rem;
     border: none;
   }
   .product__name,

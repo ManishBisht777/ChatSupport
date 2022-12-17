@@ -17,6 +17,12 @@
   }
 }
 
+.navbar__NavLinks li:hover {
+  color: $black;
+  text-decoration: underline;
+  transition: 0.3s ease-in-out;
+}
+
 .nav__close {
   display: none;
 }

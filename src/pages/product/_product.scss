@@ -9,6 +9,7 @@
   max-width: 20rem;
   border: 1px solid $light-black;
   padding: 2rem;
+  height: 100%;
 }
 
 .product__info {
@@ -95,6 +96,7 @@
   .product__image {
     flex-grow: 1;
     max-width: 100%;
+    padding: 1rem;
     border: none;
   }
   .product__name,

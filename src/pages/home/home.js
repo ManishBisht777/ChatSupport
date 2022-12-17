@@ -123,7 +123,15 @@ const Home = () => {
         <img className="creator__image" src={getImageByKey("creator")} alt="" />
 
         <div className="container container--between">
-          <h4 className="creator__heading">TOP CREATORS OF THE WEEK</h4>
+          <motion.h4
+            initial={{ opacity: 0, y: "10%" }}
+            whileInView={{ opacity: 1, y: "0%" }}
+            viewport={{ once: true, amount: 1 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="creator__heading"
+          >
+            TOP CREATORS OF THE WEEK
+          </motion.h4>
           <motion.ul
             variants={fromright}
             initial="hidden"
