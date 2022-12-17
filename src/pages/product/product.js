@@ -1,12 +1,16 @@
 import React from "react";
+import Support from "../../components/liveSupport/support";
 import getImageByKey from "../../ImageMapping";
-
 
 const Product = () => {
   return (
     <main>
       <div className="product container">
-        <img className="product__image" src={getImageByKey("productImage")} alt="product" />
+        <img
+          className="product__image"
+          src={getImageByKey("productImage")}
+          alt="product"
+        />
         <div className="product__info">
           <div className="product__name container gap--lg container--between">
             <h2>Boolean Egyptian </h2>
@@ -33,33 +37,19 @@ const Product = () => {
 
             <button className="button--dark">Add to cart </button>
           </div>
-          <details className="product__description expand__box">
-            <summary>Description</summary>
+          <div className="product__status expand__box">
+            <h2>Description</h2>
             <div>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
               blanditiis quae adipisci beatae quod non aperiam vitae odit
               officiis doloribus.
             </div>
-          </details>
-          <details className="product__listing expand__box">
-            <summary>Description</summary>
-            <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              blanditiis quae adipisci beatae quod non aperiam vitae odit
-              officiis doloribus.
-            </div>
-          </details>
-
-          <details className="product__status expand__box">
-            <summary>Description</summary>
-            <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              blanditiis quae adipisci beatae quod non aperiam vitae odit
-              officiis doloribus.
-            </div>
-          </details>
+          </div>
         </div>
       </div>
+
+      <Support />
+
       <div className="collection">
         <div className="collection_heading container container--between">
           Explore more from this collection
@@ -84,7 +74,26 @@ const Product = () => {
               </div>
             </div>
           </div>
-          
+          <div className="collection__item container container--col gap--md">
+            <img src={getImageByKey("sliderImg")} alt="collection product" />
+            <div className="container container--between">
+              <p>Sassy</p>
+              <div className="container gap--md product__price container--center-row">
+                <img className="icon" src={getImageByKey("curr")} alt="" />
+                <p>0.09</p>
+              </div>
+            </div>
+          </div>
+          <div className="collection__item container container--col gap--md">
+            <img src={getImageByKey("sliderImg")} alt="collection product" />
+            <div className="container container--between">
+              <p>Sassy</p>
+              <div className="container gap--md product__price container--center-row">
+                <img className="icon" src={getImageByKey("curr")} alt="" />
+                <p>0.09</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>

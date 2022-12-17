@@ -1,0 +1,20 @@
+@use "../../styles/assets" as *;
+
+.support {
+  padding: 3rem;
+  color: $light-black;
+  h2 {
+    font-weight: 700;
+  }
+}
+
+.startchat {
+  min-height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("../assets/b11.jpg") no-repeat center/cover;
+  //   background: $offwhite;
+}
