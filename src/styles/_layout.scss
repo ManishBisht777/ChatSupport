@@ -41,10 +41,22 @@
   border-radius: 50%;
   width: 1.5rem;
   height: 1.5rem;
+  position: relative;
+  transition: 0.3s ease-in-out;
 
   img {
     object-fit: contain;
+    transition: 0.3s ease-in-out;
   }
+}
+
+.round-btn:hover {
+  background: $offwhite;
+  transition: 0.3s ease-in-out;
+}
+.round-btn:hover img {
+  scale: 1.2;
+  transition: 0.3s ease-in-out;
 }
 
 .dark-para {

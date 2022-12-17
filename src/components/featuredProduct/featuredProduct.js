@@ -19,7 +19,8 @@ const FeaturedProduct = ({ image }) => {
       <motion.div
         variants={container}
         initial="hidden"
-        animate="show"
+        whileInView={"show"}
+        viewport={{ once: true, amount: 0.3 }}
         transition={{ ease: "easeInOut" }}
         className="container container--col gap--lg featured__product-info"
       >
