@@ -11,11 +11,18 @@ const Product = () => {
       transition={{ duration: 1.5, type: "spring" }}
     >
       <div className="product container">
-        <img
-          className="product__image"
-          src={getImageByKey("productImage")}
-          alt="product"
-        />
+        <picture>
+          <source
+            media="(min-width:800px)"
+            srcSet={getImageByKey("productImage")}
+          />
+          <img
+            className="product__image"
+            src={getImageByKey("feature1")}
+            alt="product"
+          />
+        </picture>
+
         <div className="product__info">
           <div className="product__name container gap--lg container--between">
             <h2>Boolean Egyptian </h2>

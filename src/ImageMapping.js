@@ -22,8 +22,23 @@ import curr from "./assets/curr.svg";
 import sliderImg from "./assets/slider.svg";
 
 const images = {
- search,cart,bell,logo,ham,close,arrow,creator,landingImage,mail,location,feature1,feature2,feature3
- , productImage,curr,sliderImg
+  search,
+  cart,
+  bell,
+  logo,
+  ham,
+  close,
+  arrow,
+  creator,
+  landingImage,
+  mail,
+  location,
+  feature1,
+  feature2,
+  feature3,
+  productImage,
+  curr,
+  sliderImg,
 };
 
 function getImageByKey(key) {

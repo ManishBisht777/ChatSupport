@@ -14,7 +14,7 @@
 .product__info {
   border-left: 0;
   color: $light-black;
-  width: 30rem;
+  max-width: 30rem;
 }
 
 .product__name {
@@ -29,14 +29,11 @@
   div {
     margin-top: 1rem;
   }
- 
 }
 
 .product__name,
 .product__detail,
-.product__status,
-.product__description,
-.product__listing {
+.product__status {
   padding: 2rem;
   border-top: 1px solid $light-black;
   border-right: 1px solid $light-black;
@@ -84,4 +81,27 @@
 .collection__container {
   padding: 3rem;
   flex-wrap: wrap;
+}
+
+@media screen and(max-width:800px) {
+  .product {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $light-black;
+    margin: 1rem;
+  }
+  .product__image {
+    flex-grow: 1;
+    max-width: 100%;
+    border: none;
+  }
+  .product__name,
+  .product__detail,
+  .product__status {
+    padding: 1rem;
+    border: none;
+    font-size: $font-sm;
+  }
 }

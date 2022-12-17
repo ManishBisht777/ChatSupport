@@ -577,7 +577,7 @@ label[for=search] {
 .product__info {
   border-left: 0;
   color: #333333;
-  width: 30rem;
+  max-width: 30rem;
 }
 
 .product__name h2 {
@@ -593,9 +593,7 @@ label[for=search] {
 
 .product__name,
 .product__detail,
-.product__status,
-.product__description,
-.product__listing {
+.product__status {
   padding: 2rem;
   border-top: 1px solid #333333;
   border-right: 1px solid #333333;
@@ -645,6 +643,28 @@ label[for=search] {
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 800px) {
+  .product {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #333333;
+    margin: 1rem;
+  }
+  .product__image {
+    flex-grow: 1;
+    max-width: 100%;
+    border: none;
+  }
+  .product__name,
+.product__detail,
+.product__status {
+    padding: 1rem;
+    border: none;
+    font-size: 1rem;
+  }
+}
 .str-chat {
   --str-chat__primary-color: #009688;
   --str-chat__active-primary-color: #004d40;
