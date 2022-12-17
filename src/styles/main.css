@@ -157,6 +157,10 @@ label[for=search] {
   max-width: 1.5rem;
 }
 
+.str-chat__reverse-infinite-scroll {
+  max-height: 40vh;
+}
+
 .str-chat {
   --str-chat__primary-color: #009688;
   --str-chat__active-primary-color: #004d40;

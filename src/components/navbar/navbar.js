@@ -22,7 +22,11 @@ const Navbar = () => {
       >
         <img src={getImageByKey("ham")} alt="toggle menu" />
       </button>
-      <img className="navbar__logo" src={getImageByKey( "logo")} alt="Artsy logo" />
+      <img
+        className="navbar__logo"
+        src={getImageByKey("logo")}
+        alt="Artsy logo"
+      />
       <ul
         className="container gap--lg  navbar__NavLinks navlink-link"
         onClick={(e) => {
@@ -30,7 +34,11 @@ const Navbar = () => {
         }}
       >
         <li>
-          <img className="navbar__logo-mobile" src={getImageByKey( "logo")} alt="Artsy logo" />
+          <img
+            className="navbar__logo-mobile"
+            src={getImageByKey("logo")}
+            alt="Artsy logo"
+          />
         </li>
         <li>
           <NavLink
@@ -48,19 +56,8 @@ const Navbar = () => {
             live support
           </NavLink>
         </li>
-        
       </ul>
       <ul className="container gap--md navbar__NavLinks ">
-        <li>
-          <Link to="/search">
-            <img src={getImageByKey( "search")} alt="search" />
-          </Link>
-        </li>
-        <li>
-          <Link to="cart">
-            <img src={getImageByKey("cart")} alt="cart" />
-          </Link>
-        </li>
         <li>
           <Link to="/notification">
             <img src={getImageByKey("bell")} alt="notification" />
