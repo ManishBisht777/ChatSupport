@@ -276,6 +276,7 @@ label[for=search] {
   margin-top: 3rem;
   border-top: 1px solid #333333;
   padding-top: 3rem;
+  transition: 0.4s ease-in-out;
 }
 .featured-product:nth-child(3) {
   flex-direction: row-reverse;

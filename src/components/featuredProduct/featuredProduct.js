@@ -7,10 +7,7 @@ import { container, item } from "../../animation/animation";
 
 const FeaturedProduct = ({ image }) => {
   return (
-    <Link
-      to="/product"
-      className="featured-product container gap--lg container--center-row "
-    >
+    <div className="featured-product container gap--lg container--center-row ">
       <motion.img
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -50,11 +47,13 @@ const FeaturedProduct = ({ image }) => {
           <img className="people-grp" src={peopleGrp} alt="people grp" />
           <p className="dark-para">64 major creators</p>
           <button className="round-btn more-info">
-            <img src={getImageByKey("arrow")} alt="more info" />
+            <Link to="/product">
+              <img src={getImageByKey("arrow")} alt="more info" />
+            </Link>
           </button>
         </motion.div>
       </motion.div>
-    </Link>
+    </div>
   );
 };
 
