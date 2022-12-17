@@ -16,6 +16,8 @@ const Support = () => {
   const [startChat, setStartChat] = useState(false);
   const [channel, setChannel] = useState(null);
   const [client, setClient] = useState();
+  const [userName, setUserName] = useState();
+  const [profile, setProfile] = useState();
 
   useEffect(() => {
     if (!startChat) return;
@@ -25,10 +27,11 @@ const Support = () => {
       setClient(clientData);
 
       const userData = await clientData.setGuestUser({
-        id: "GuestUser",
-        name: "Guest User",
-        image: "https://bit.ly/2u9Vc0r",
+        id: userName,
+        name: userName,
+        image: profile,
       });
+
       console.log(userData.me);
 
       const channelData = clientData.channel(
@@ -45,7 +48,17 @@ const Support = () => {
     };
 
     initChat();
-  }, [startChat]);
+  }, [startChat, profile, userName]);
+
+  useEffect(() => {
+    (async function fetchData() {
+      const res = await fetch("https://randomuser.me/api/");
+      const data = await res.json();
+
+      setUserName(data.results[0].name.first);
+      setProfile(data.results[0].picture.thumbnail);
+    })();
+  }, []);
 
   return (
     <motion.section
