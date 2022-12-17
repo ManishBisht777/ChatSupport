@@ -2,35 +2,67 @@ import React from "react";
 import Carousel from "../../components/carousel/carousel";
 import FeaturedProduct from "../../components/featuredProduct/featuredProduct";
 import getImageByKey from "../../ImageMapping";
-
+import { motion } from "framer-motion";
+import { container } from "../../animation/animation";
 const Home = () => {
   return (
-    <main>
+    <motion.main
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.5, type: "spring" }}
+    >
       <section className="container container--center landingpage gap--lg">
-        <h1 className="landingpage__heading">
+        <motion.h1
+          initial={{ y: "10%", opacity: 0 }}
+          animate={{ y: "0%", opacity: 1 }}
+          transition={{ duration: 0.75, ease: "easeInOut" }}
+          className="landingpage__heading"
+        >
           Photography is poetry & beautiful untold stories
-        </h1>
-        <p className="landlingpage__para">
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 0.75, ease: "easeInOut" }}
+          className="landlingpage__para"
+        >
           Flip through more than 10,000 vintage shots, old photograghs, historic
           images and captures seamlessly in one place. Register to get top
           access.
-        </p>
+        </motion.p>
 
-        <div className="container gap--lg carousel">
+        <motion.div
+          variants={container}
+          initial="hidden"
+          animate="show"
+          transition={{ ease: "easeInOut" }}
+          className="container gap--lg carousel"
+        >
           <Carousel />
           <Carousel />
           <Carousel />
           <Carousel />
-        </div>
-        <img src={getImageByKey( "landingImage")} alt="" className="landing__image" />
+        </motion.div>
+        <img
+          src={getImageByKey("landingImage")}
+          alt=""
+          className="landing__image"
+        />
       </section>
 
       <section className="featured">
-        <h2 className="featured__heading">Featured products</h2>
-        <FeaturedProduct image={getImageByKey("feature1") } />
+        <motion.h2
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.1, duration: 0.25, ease: "easeInOut" }}
+          className="featured__heading"
+        >
+          Featured products
+        </motion.h2>
+        <FeaturedProduct image={getImageByKey("feature1")} />
         <FeaturedProduct image={getImageByKey("feature2")} />
         <FeaturedProduct image={getImageByKey("feature3")} />
-
       </section>
 
       <section className="events container container--col gap--md">
@@ -65,16 +97,16 @@ const Home = () => {
       <section className="explore container container--col round">
         <a href="/" className="container container--between secondary-links ">
           Explore marketplace
-          <img className="" src={getImageByKey( "arrow")} alt="" />
+          <img className="" src={getImageByKey("arrow")} alt="" />
         </a>
         <a href="/" className="container container--between secondary-links ">
           See auctions
-          <img src={getImageByKey( "arrow")} alt="" />
+          <img src={getImageByKey("arrow")} alt="" />
         </a>
       </section>
 
       <section className="creator">
-        <img className="creator__image" src={getImageByKey( "creator")} alt="" />
+        <img className="creator__image" src={getImageByKey("creator")} alt="" />
 
         <div className="container container--between">
           <h4 className="creator__heading">TOP CREATORS OF THE WEEK</h4>
@@ -108,7 +140,7 @@ const Home = () => {
           <button className="button--dark">Subscribe</button>
         </form>
       </section>
-    </main>
+    </motion.main>
   );
 };
 

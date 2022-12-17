@@ -1,10 +1,15 @@
 import React from "react";
 import Support from "../../components/liveSupport/support";
 import getImageByKey from "../../ImageMapping";
+import { motion } from "framer-motion";
 
 const Product = () => {
   return (
-    <main>
+    <motion.main
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.5, type: "spring" }}
+    >
       <div className="product container">
         <img
           className="product__image"
@@ -96,7 +101,7 @@ const Product = () => {
           </div>
         </div>
       </div>
-    </main>
+    </motion.main>
   );
 };
 
