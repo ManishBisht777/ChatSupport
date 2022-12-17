@@ -16,7 +16,6 @@ const Support = () => {
   const [startChat, setStartChat] = useState(false);
   const [channel, setChannel] = useState(null);
   const [client, setClient] = useState();
-  const [user, setUser] = useState();
 
   useEffect(() => {
     if (!startChat) return;
@@ -31,7 +30,6 @@ const Support = () => {
         image: "https://bit.ly/2u9Vc0r",
       });
       console.log(userData.me);
-      setUser(userData.me);
 
       const channelData = clientData.channel(
         "messaging",
