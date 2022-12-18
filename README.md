@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Arsty - Hackathon project for wemakedevs hakathon
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of contents
 
-## Available Scripts
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [inspiration](#inspiration)
+  - [What](#what-is-does)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Setup](#installation-steps)
+- [Author](#author)
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+### Screenshot
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![](./showcase/1.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Inspiration
 
-### `npm test`
+As a person who is more into art, I always wondered why the majority of websites don't have a good UI despite the fact that there are people capable of doing more than that. so I tried to make a website that has a good user experience, look and feel to it.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### what is does
 
-### `npm run build`
+It has a landing page where users can see artwork and when clicking the users are redirected to a new page with detailed info about the artwork beneath that there is a feature for live chat/support where people can start a chat with random people who are also interested in artwork like them and also ask queries if they have any. every time a user enters the chat a new random user is created with a single button click and when the user leaves the website the user is destroyed making the concurrent user free for making space for new users.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Links
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Live Site URL: [Live Url](https://make-url-small.netlify.app/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## My process
 
-### `npm run eject`
+### Built with
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+I first started by creating react template by CRA then started making the landing page for the website and making it as clean as I can then I created another page for the art info and added a live chat/support for that page. i went ahead and make the site fully responsive and added animations to it.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation Steps
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. [Fork](https://github.com/ManishBisht777/ChatSupport)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Clone the project, you can use the following command:
 
-## Learn More
+```bash
+git clone https://github.com/<your-github-username>/ChatSupport
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Navigate to the project directory
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+cd ChatSupport
+```
 
-### Code Splitting
+4. Install dependencies with npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm install
+```
 
-### Analyzing the Bundle Size
+5. Run the project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm run start
+```
 
-### Making a Progressive Web App
+### author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Website - [manish bisht](https://bisht-dev.netlify.app/)
+- Twitter - [@manishbisht](https://twitter.com/manishbisht9711)
+- Project submission - [devpost](https://devpost.com/software/artsy-04eoct?ref_content=my-projects-tab&ref_feature=my_projects)
