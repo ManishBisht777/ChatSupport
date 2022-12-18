@@ -28,7 +28,8 @@ It has a landing page where users can see artwork and when clicking the users ar
 
 ### Links
 
-- Live Site URL: [Live Url](https://make-url-small.netlify.app/)
+- Live Site URL: [Live Url](https://arthaven.netlify.app/)
+- Project submission - [devpost](https://devpost.com/software/artsy-04eoct?ref_content=my-projects-tab&ref_feature=my_projects)
 
 ## My process
 
@@ -68,4 +69,3 @@ npm run start
 
 - Website - [manish bisht](https://bisht-dev.netlify.app/)
 - Twitter - [@manishbisht](https://twitter.com/manishbisht9711)
-- Project submission - [devpost](https://devpost.com/software/artsy-04eoct?ref_content=my-projects-tab&ref_feature=my_projects)
