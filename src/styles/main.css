@@ -144,6 +144,8 @@ label[for=search] {
   background: #292929;
   color: #fff;
   transition: 0.3s ease-in-out;
+  border: 1px solid #333333;
+  text-align: center;
 }
 
 .button--dark:hover,

@@ -20,6 +20,10 @@ import feature3 from "./assets/featured3.svg";
 import productImage from "./assets/product.svg";
 import curr from "./assets/curr.svg";
 import sliderImg from "./assets/slider.svg";
+import c1 from "./assets/c1.jpg";
+import c2 from "./assets/c2.jpg";
+import c3 from "./assets/c3.jpg";
+import c4 from "./assets/c4.jpg";
 
 const images = {
   search,
@@ -39,6 +43,10 @@ const images = {
   productImage,
   curr,
   sliderImg,
+  c1,
+  c2,
+  c3,
+  c4,
 };
 
 function getImageByKey(key) {

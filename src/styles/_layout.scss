@@ -73,6 +73,8 @@
   background: $black;
   color: $white;
   transition: 0.3s ease-in-out;
+  border: 1px solid $light-black;
+  text-align: center;
 }
 
 .button--dark:hover,

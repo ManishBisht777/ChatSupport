@@ -12,20 +12,17 @@ const Product = () => {
     >
       <div className="product container">
         <picture>
-          <source
-            media="(min-width:800px)"
-            srcSet={getImageByKey("productImage")}
-          />
+          <source media="(min-width:800px)" srcSet={getImageByKey("c1")} />
           <img
             className="product__image"
-            src={getImageByKey("feature1")}
+            src={getImageByKey("c1")}
             alt="product"
           />
         </picture>
 
         <div className="product__info">
           <div className="product__name container gap--lg container--between">
-            <h2>Boolean Egyptian </h2>
+            <h2>Beautiful flowers </h2>
             <div className="container gap--md product__price container--center-row">
               <img className="icon" src={getImageByKey("curr")} alt="" />
               <p>0.09</p>
@@ -37,17 +34,12 @@ const Product = () => {
               Creator
               <span>Manish</span>
             </p>
-            <p>Made in itally</p>
+            <p>Made in india</p>
             <p className="container gap--md product__view">
               Total views <span>1.5K</span>
             </p>
-            <div className="container gap--md">
-              <p>-</p>
-              <span>4</span>
-              <p>+</p>
-            </div>
 
-            <button className="button--dark">Add to cart </button>
+            <button className="button--dark">Buy This Artwork</button>
           </div>
           <div className="product__status expand__box">
             <h2>Description</h2>
@@ -77,7 +69,7 @@ const Product = () => {
 
         <div className="collection__container container container--center-row gap--lg">
           <div className="collection__item container container--col gap--md">
-            <img src={getImageByKey("sliderImg")} alt="collection product" />
+            <img src={getImageByKey("c4")} alt="collection product" />
             <div className="container container--between">
               <p>Sassy</p>
               <div className="container gap--md product__price container--center-row">
@@ -87,7 +79,7 @@ const Product = () => {
             </div>
           </div>
           <div className="collection__item container container--col gap--md">
-            <img src={getImageByKey("sliderImg")} alt="collection product" />
+            <img src={getImageByKey("c2")} alt="collection product" />
             <div className="container container--between">
               <p>Sassy</p>
               <div className="container gap--md product__price container--center-row">
@@ -97,7 +89,7 @@ const Product = () => {
             </div>
           </div>
           <div className="collection__item container container--col gap--md">
-            <img src={getImageByKey("sliderImg")} alt="collection product" />
+            <img src={getImageByKey("c3")} alt="collection product" />
             <div className="container container--between">
               <p>Sassy</p>
               <div className="container gap--md product__price container--center-row">

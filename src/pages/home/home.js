@@ -18,7 +18,7 @@ const Home = () => {
           transition={{ duration: 0.75, ease: "easeInOut" }}
           className="landingpage__heading"
         >
-          Photography is poetry & beautiful untold stories
+          Art is Poetry And & Beautiful Untold Stories
         </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}
@@ -26,9 +26,8 @@ const Home = () => {
           transition={{ delay: 0.5, duration: 0.75, ease: "easeInOut" }}
           className="landlingpage__para"
         >
-          Flip through more than 10,000 vintage shots, old photograghs, historic
-          images and captures seamlessly in one place. Register to get top
-          access.
+          Flip through more than 10,000 Artworks from artists around the globe
+          seamlessly in one place.
         </motion.p>
 
         <motion.div
@@ -38,10 +37,10 @@ const Home = () => {
           transition={{ ease: "easeInOut" }}
           className="container gap--lg carousel"
         >
-          <Carousel />
-          <Carousel />
-          <Carousel />
-          <Carousel />
+          <Carousel image={getImageByKey("c1")} />
+          <Carousel image={getImageByKey("c2")} />
+          <Carousel image={getImageByKey("c3")} />
+          <Carousel image={getImageByKey("c4")} />
         </motion.div>
         <img
           src={getImageByKey("landingImage")}
@@ -58,7 +57,7 @@ const Home = () => {
           transition={{ delay: 0.1, duration: 0.25, ease: "easeInOut" }}
           className="featured__heading"
         >
-          Featured products
+          Featured Artworks
         </motion.h2>
         <FeaturedProduct image={getImageByKey("feature1")} />
         <FeaturedProduct image={getImageByKey("feature2")} />
