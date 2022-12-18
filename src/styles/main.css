@@ -716,6 +716,7 @@ label[for=search] {
 .footer {
   padding: 3rem;
   color: #333333;
+  margin-top: 2rem;
 }
 
 .footer__icon {
